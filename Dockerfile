@@ -1,5 +1,7 @@
 FROM node:20 AS base
-
+WORKDIR /app
+COPY . /app
+CMD ["node", "index.js"]
 ### <JANGAN DIGANTI>
 ARG R.RIDWAN_SULAIMAN
 ARG 00000063353
